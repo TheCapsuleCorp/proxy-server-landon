@@ -1,0 +1,16 @@
+{
+  "name": "proxy",
+  "description": "> Project description",
+  "author": "Landon Metcalf",
+  "license": "ISC",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git"
+  },
+  "version": "1.0.0",
+  "main": "server/index.js"
+}
