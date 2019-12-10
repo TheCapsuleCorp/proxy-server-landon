@@ -6,11 +6,25 @@
   "engines": {
     "node": ">=6.13.0"
   },
-  "scripts": {},
-  "dependencies": {},
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git"
   },
   "version": "1.0.0",
-  "main": "server/index.js"
+  "main": "server/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCapsuleCorp/proxy-server-landon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheCapsuleCorp/proxy-server-landon/issues"
+  },
+  "homepage": "https://github.com/TheCapsuleCorp/proxy-server-landon#readme"
 }
