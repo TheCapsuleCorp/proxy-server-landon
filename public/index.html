@@ -8,7 +8,6 @@
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
     <base href="/">
-    <!-- <base href="http://localhost:3000/"  /> -->
     <meta charset="utf-8">
     <title>CAPBNB proxy server</title>
     <link rel="stylesheet" href="./styles.css" type="text/css">
@@ -21,12 +20,13 @@
         <div id='reviews-service'> Reviews </div>
         <div id='bookings-service'> Bookings </div>
       </div>
+      <div id='neighborhoods-service'> Neighborhoods </div>
     </div>
 
-    <script src="http://localhost:8080/client/dist/styles.css"></script>
     <script src="http://localhost:8080/bundle.js"></script>
+    <script src="http://localhost:3004/bundle.js"></script>
     <script>
-      console.log(Photos);
+    console.log(Reviews);
       ReactDOM.render(
         React.createElement(Photos.default),
         document.getElementById('photo-service')
