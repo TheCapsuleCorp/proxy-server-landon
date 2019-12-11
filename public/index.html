@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous">
+    </script>
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
@@ -23,9 +27,30 @@
       <div id='neighborhoods-service'> Neighborhoods </div>
     </div>
 
+    <script>
+    $(window).scroll(function(){
+      var $el = $('#bookings-service');
+      var $rev = $('#reviews-service');
+
+      var isPositionFixed = ($el.css('position') == 'fixed');
+      if ($(this).scrollTop() > 470 && !isPositionFixed){
+        $el.css({'position': 'fixed', 'top': '0px', 'left': '57.155%'});
+        $rev.css({'width': '57.23%'});
+      }
+      if ($(this).scrollTop() < 470 && isPositionFixed){
+        $el.css({'position': 'static', 'top': '0px'});
+        $rev.css({'width': '58%'});
+      }
+    });
+    </script>
     <script src="http://localhost:8080/bundle.js"></script>
 
     <script src="http://localhost:3004/bundle.js"></script>
+
+    <script src="http://localhost:3003/bundle.js"></script>
+
+
+
 
     <script>
       ReactDOM.render(

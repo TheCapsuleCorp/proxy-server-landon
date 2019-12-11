@@ -1,5 +1,5 @@
 body {
-  padding: 0.25%;
+  padding: 10px;
 }
 
 #parent-container {
@@ -28,7 +28,8 @@ body {
 #bookings-service {
   width: 42%;
   height: 350px;
-  background-color: #c0dcaf;
+  margin-left: 15px;
+  background-color: white;
 }
 
 #neighborhoods-service {
